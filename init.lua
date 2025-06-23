@@ -82,7 +82,7 @@ vim.o.confirm = true
 --  See `:help vim.keymap.set()`
 
 -- Fast Command
-vim.keymap.set('n', ';', ':', { desc = 'Quickly enable command' })
+vim.keymap.set({ 'n', 'v' }, ';', ':', { desc = 'Quickly enable command' })
 
 -- Fast Cursor Movement
 vim.keymap.set({ 'n', 'v' }, 'H', '5h', { desc = 'Move cursor left by 5 units' })
